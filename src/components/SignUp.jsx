@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const SignUp = () => {
     const [data, setData] = useState(
@@ -38,6 +39,9 @@ const SignUp = () => {
     }
     return (
         <div>
+             <div class="alert alert-danger" role="alert">
+ <center><h1>KSRTC APP</h1></center>
+</div>
             <div className="container">
                 <div className="row">
                     <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -73,6 +77,10 @@ const SignUp = () => {
                             <div className="col col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12"></div>
                             <button className="btn btn-success" onClick={readvalue}>sign Up</button>
                         </div>
+                        <div className="col col-sm-6 col-md-6 col-lg-12 col-xl-12 col-xxl-12">
+                    <p>New users click to<Link to="/" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"> Back To Login</Link></p>
+
+                    </div>
                     </div>
                 </div>
             </div>
