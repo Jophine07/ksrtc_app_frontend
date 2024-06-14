@@ -4,6 +4,7 @@ import Login from './components/Login';
 import SignUp from './components/SignUp';
 import Add from './components/Add';
 import Search from './components/Search';
+import View from './components/View';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
      <SignUp/>
      <Add/>
      <Search/>
+     <View/>
     </div>
   );
 }
