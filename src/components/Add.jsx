@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import NavBar from './NavBar'
 
 const Add = () => {
     const [data, setData] = useState(
@@ -31,6 +32,10 @@ const Add = () => {
 
     return (
         <div>
+             <div class="alert alert-danger" role="alert">
+ <center><h1>KSRTC APP</h1></center>
+</div>
+            <NavBar/>
             <div className="container">
                 <div className="row col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
